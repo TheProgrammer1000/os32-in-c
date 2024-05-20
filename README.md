@@ -1,7 +1,5 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 ### Operating System Kernel
 
 Worked on this couple of months and tried to learn how to practically write a Operating System Kernel. With much research i ended up to building a starting of my kernel of the operating system!
