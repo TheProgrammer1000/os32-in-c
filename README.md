@@ -125,7 +125,4 @@ Use this space to list resources you find helpful and would like to give credit 
 -   [Osdev](https://wiki.osdev.org)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/dennis-karlsson-74a37b251/
