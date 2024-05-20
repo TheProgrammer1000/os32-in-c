@@ -2,14 +2,13 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Operating System 32bit
-Worked on this couple of months and tried to learn how to practically write a Operating System. With much research i ended up to building a starting of my kernel of the operating system!
+### Operating System Kernel
+
+Worked on this couple of months and tried to learn how to practically write a Operating System Kernel. With much research i ended up to building a starting of my kernel of the operating system!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 # Assembly AND C
 
@@ -20,9 +19,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
