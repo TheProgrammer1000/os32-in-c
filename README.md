@@ -73,7 +73,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## To Do
 
--   [] Allocate memory
+-   [ ] Allocate memory
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -121,7 +121,7 @@ Project Link: [OS32bit](https://github.com/TheProgrammer1000/os32-in-c/tree/main
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
--   [Udemy - Daniel McCarthy - Develop a multithreaded Kernel](https://pages.github.com)
+-   [Udemy - Daniel McCarthy - Develop a multithreaded Kernel](https://www.udemy.com/course/developing-a-multithreaded-kernel-from-scratch/)
 -   [Nick Bundel - Writting Operating System fron Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 -   [Osdev](https://wiki.osdev.org)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
