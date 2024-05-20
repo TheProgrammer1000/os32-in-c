@@ -72,15 +72,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 -   [ ] Allocate memory
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -115,8 +113,6 @@ Project Link: [OS32bit](https://github.com/TheProgrammer1000/os32-in-c/tree/main
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 -   [Udemy - Daniel McCarthy - Develop a multithreaded Kernel](https://www.udemy.com/course/developing-a-multithreaded-kernel-from-scratch/)
 -   [Nick Bundel - Writting Operating System fron Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
