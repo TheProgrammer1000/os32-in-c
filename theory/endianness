@@ -1,0 +1,28 @@
+
+Operating systems handles the memory storage with two different architectures: the Big Endian and the Little Endian. The difference is the order in which the bytes are stored in memory.
+
+   * Little Endian stores little end first. This means for a HEX word 0x1234 is stored in memory as (0x34 0x12). The little end, or lower end, is stored first. The same is true for a four-byte value; for example, 0x12345678 would be stored as (0x78 0x56 0x34 0x12). Intel-based computers are mostly based on this.
+
+   * Big Endian stores in the reverse fashion, so 0x1234 would be stored as (0x12 0x34) in memory. This is the method used by Motorola computers, IBM z computers and can also be used on RISC-based computers.  [1]
+
+To help you understand the relationship between the endianess and operating systems, a summary is shown as follows:
+
+PLATFORM_NAME        ENDIAN_FORMAT
+Solaris[tm] OE (32-bit)                             Big
+Solaris[tm] OE (64-bit)                             Big
+HP-UX (64-bit)                                         Big
+HP-UX IA (64-bit)                                     Big
+HP Tru64 UNIX                                        Little
+AIX-Based Systems (64-bit)                    Big
+Microsoft Windows IA (32-bit)                 Little
+Microsoft Windows IA (64-bit)                 Little
+IBM zSeries Based Linux                        Big
+Linux IA (32-bit)                                       Little
+Linux IA (64-bit)                                       Little
+Microsoft Windows 64-bit for AMD          Little
+Linux 64-bit for AMD                                Little
+HP Open VMS                                         Little
+Apple Mac OS                                         Big
+
+    //video_memory[0] = 0x4103; // endingness 
+    //video_memory[0] = 0x0341; // NOT this will be wrong

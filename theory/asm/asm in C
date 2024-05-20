@@ -1,0 +1,15 @@
+section .asm
+
+global idt_load
+idt_load:
+    push ebp
+    mov ebp, esp
+
+    # we do [ebp] then it will provide the base pointer we pushed to the stack
+    # we did [ebp+4] then it will point to the return address of the function caller,
+    # who called us
+    mov ebx, [ebp+8] # first argument pass to the funtion
+    lidt [ebx]
+
+    pop ebp
+    ret

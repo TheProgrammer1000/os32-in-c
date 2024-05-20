@@ -1,0 +1,18 @@
+int21h:
+  pushad
+  cli
+  call int21_handler
+  sti
+  popad
+  iret
+
+we need to clear the interrupt with cli
+and continue the interrupt with sti
+
+so we then pushad so all the registers and segment
+get push to the stack, then we clear the interrupt with
+cli then calling int21_handler
+
+then we sti so continue with the interrupt and pop all the
+registers and segment back again then we do iret which mean
+interrupt return!

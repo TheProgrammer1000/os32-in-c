@@ -1,0 +1,49 @@
+
+    /* 
+        Here we have 'A' that char character gonna store
+        so basically it will store the ASCII-code hexadecimal that is 0x41
+        and char variable will only store 8 bits
+
+        char color we set it directly to 0x03 so for this case is the color light-blue
+        the secound byte is the color.
+
+        But now we want the function to flip these
+
+        0000 0001 = 1
+        0000 0010 = 2
+        0000 0100 = 4
+        0000 1000 = 8
+        0001 0000 = 16
+        0010 0000 = 32
+        0100 0000 = 64
+        1000 0000 = 128
+
+        65 in decimal is 'A'
+
+        0100 0001 = 'A'
+
+        color lightblue
+        0x03 = 0000 0011
+
+        so we got 
+        char      color
+        0100 0001 0000 0011
+
+        
+        & means the 2 numbers only will be 1 if it is 1 & 1
+        | means the 2 numbers will be 1 on either the number is 1. so like 1 1 will be 1
+        ^ means the 2 numbers is 1 if it is diffrent
+
+        << left shift then number of shifts to the left
+        >>  right shift then number of shifts to the right
+
+        1 & 1 blir true och 0 & 0 blir true
+
+        0100 0001 | 0000 0011
+
+        börja läsa från vänster sedan addera | c och kolla det andra operator "|"
+        color << 8 | c  
+
+        0000 0011 0100 0001 
+
+    */

@@ -1,0 +1,18 @@
+1. root-folder: make clean
+2. root-folder: ./build.sh
+3. root-folder: cd bin
+4. bin-folder: gdb
+5. gdb: add-symbol-file ../build/kernelfull.o 0x100000
+
+6. press yes
+
+
+ATTACH QEMU
+    COMMANDS:
+    1. target remote | qemu-system-x86_64 -hda ./os.bin -gdb stdio -S
+    2. break kernel_main
+    3. press C
+    4. bt (for backtrace)
+
+    5. layout asm
+    6. stepi

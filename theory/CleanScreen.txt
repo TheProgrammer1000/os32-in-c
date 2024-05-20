@@ -1,0 +1,14 @@
+//#define VGA_WIDTH 80
+    //#define VGA_HEIGHT 20
+
+    // Height som length är 20!
+
+   // första varvet så kommer x bli 80 och bara x:et som loppar igenom
+   // andra varvet så blir y = 80 och plusar med X, tills x blir 80
+   // Sedan gör loppan så tills texten är helt blank
+    
+    for(int y = 0; y < VGA_HEIGHT; y++) {
+        for(int x = 0; x < VGA_WIDTH; x++) {
+            terminal_putchar(x, y, ' ', 0);
+        }
+    }

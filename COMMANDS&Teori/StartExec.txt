@@ -1,0 +1,5 @@
+START:
+    1. root-folder: make clean
+    2. root-folder: ./build.sh
+    3. root-folder: cd bin
+    4. bin: qemu-system-x86_64 -hda ./os.bin
