@@ -11,7 +11,7 @@ Worked on this couple of months and tried to learn how to practically write a Op
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
--   [![alt text](image.png)]
+![alt text](image-1.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
