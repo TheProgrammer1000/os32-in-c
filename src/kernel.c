@@ -16,7 +16,7 @@ int column_counter = 0;
 int row_counter = 0;
 
 // Keeping track on the absoulte address and adding the offset
-uint32_t *DATA_POOL_ADDRESS = DATA_POOL_BEGIN; // pointing to the memory address 0x01000000
+uint32_t *DATA_POOL_ADDRESS = (uint32_t *)0x01000000; // pointing to the memory address 0x01000000
 uint32_t allocated_bytes_counter = 0;
 
 // Text and color
@@ -95,12 +95,16 @@ void print_text(const char *str)
   We want the malloc function to handle everything for us not to freeing but to select and allocte right memory for us
 
 */
-void malloc(uint32_t *temp_allocate_address, uint32_t userSize)
+void malloc(uint32_t userSize)
 {
+  uint32_t *temp_data_pool_address = DATA_POOL_ADDRESS;
+
   if ((4096 % userSize) == 0) // This means there is only one entry
   {
-    DATA_POOL_ADDRESS[0];
+    *temp_data_pool_address = 0x41; // Works we set the 0x01000000 to 0x41
   }
+
+  //
 }
 
 void kernel_main()
@@ -113,5 +117,5 @@ void kernel_main()
   idt_init();
 
   // trying to use malloc
-  malloc(DATA_POOL_ADDRESS, 5000); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
+  malloc(4096); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
 }

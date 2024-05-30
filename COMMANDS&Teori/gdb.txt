@@ -13,3 +13,11 @@ in GDB when you have stepi all the step you can see the values in the register b
 
 print $eax
 print $edx
+-------------------------------------------------------------------------------------
+ACCESS AND SEE MEMORY value
+type "x memory_value"
+
+Explaination:
+I point to the address 0x01000000 and put the value 0x41 in it,
+now when we examine what the value in 0x0100000 is now it is set 0x41
+-----------------------------------------------------------------------------------------
