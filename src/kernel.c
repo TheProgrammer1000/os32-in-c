@@ -3,17 +3,21 @@
 #include <stddef.h>
 #include "idt/idt.h"
 #include "io/io.h"
+#include "allocation.h"
 
 extern void problem();
 // VGA_WIDTH 80
 // VGA_HEIGHT 20
 
 uint16_t *video_memory = 0;
-
 uint8_t valueNow = 0;
 
 int column_counter = 0;
 int row_counter = 0;
+
+// Keeping track on the absoulte address and adding the offset
+uint32_t *DATA_POOL_ADDRESS = DATA_POOL_BEGIN; // pointing to the memory address 0x01000000
+uint32_t allocated_bytes_counter = 0;
 
 // Text and color
 uint16_t terminal_make_char(char character, char color)
@@ -86,6 +90,19 @@ void print_text(const char *str)
   }
 }
 
+/*
+  Function to allocate memory
+  We want the malloc function to handle everything for us not to freeing but to select and allocte right memory for us
+
+*/
+void malloc(uint32_t *temp_allocate_address, uint32_t userSize)
+{
+  if ((4096 % userSize) == 0) // This means there is only one entry
+  {
+    DATA_POOL_ADDRESS[0];
+  }
+}
+
 void kernel_main()
 {
   // video_memory default 0xB000
@@ -94,4 +111,7 @@ void kernel_main()
 
   // Initialize the interrupt descriptor table
   idt_init();
+
+  // trying to use malloc
+  malloc(DATA_POOL_ADDRESS, 5000); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
 }
