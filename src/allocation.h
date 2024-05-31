@@ -11,7 +11,7 @@
 
 // The user is going to request the amount of memory he wants, and then our job is the allocate it and see which is taken or not.
 
-void malloc(uint32_t userSize);
+void malloc(uint32_t userSize, uint32_t *DATA_POOL_ADDRESS);
 
 void freeMemory();
 #endif

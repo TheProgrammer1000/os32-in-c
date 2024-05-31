@@ -105,10 +105,9 @@ void heap_init(uint32_t data_pool)
   current_data_pool_address = DATA_POOL_ADDRESS; // Initialize the current data pool address
 }
 
-void custom_malloc(uint32_t userSize, uint32_t *DATA_POOL_ADDRESS)
+void malloc(uint32_t userSize, uint32_t *DATA_POOL_ADDRESS)
 {
   // uint32_t *temp_data_pool_address = DATA_POOL_ADDRESS;
-
   if ((4096 % userSize) == 0 && userSize <= 4096) // This means there is only one entry
   {
     current_data_pool_address = (uint32_t *)((uintptr_t)current_data_pool_address + 0x1000); // First use the temp_data pointer and give it a pointer type here then we add the offset with 0x1000 then it will give this whole pointer the type (uint32 *)
@@ -161,6 +160,6 @@ void kernel_main()
 
   heap_init(100000000);
   // trying to use malloc
-  custom_malloc(4096, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
-  custom_malloc(5000, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
+  malloc(4096, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
+  malloc(5000, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
 }
