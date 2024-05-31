@@ -1,12 +1,13 @@
 WHEN CREATED A NEW ASM FILE TO C USING GDB:
-  1. gdb
-  2. add-symbol-file ../build/kernelfull.o 0x100000
-  3. target remote | qemu-system-x86_64 -hda ./os.bin -gdb stdio -S
+  gdb -x init_gdb_commands.gdb
+
 
   ## Here you can do where you want the kernel.c to break which codeLine
   ## so for example type the command: break kernel.c:80
 
-  4. break kernel.c:98
+  4. break kernel.c:165
+  5. type "contiune"
+  6 stepi
 
 ---------------------------------------------------------------------------------
 in GDB when you have stepi all the step you can see the values in the register by typing
