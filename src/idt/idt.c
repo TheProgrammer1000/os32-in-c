@@ -13,7 +13,12 @@ extern void no_interrupt();
 
 void int21h_handler()
 {
-  print_text("Keyboard pressed!\n");
+  char scancode = insb(0x60);
+
+  if (scancode == 0x02) // Scancode for key '1'
+  {
+    print_text("Keyboard pressed!\n");
+  }
   outb(0x20, 0x20);
 }
 

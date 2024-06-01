@@ -162,4 +162,7 @@ void kernel_main()
   // trying to use malloc
   malloc(4096, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
   malloc(5000, DATA_POOL_ADDRESS); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
+
+  // Enable interrupts
+  asm volatile("sti");
 }
