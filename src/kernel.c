@@ -6,6 +6,8 @@
 #include "allocation/allocation.h"
 
 extern void problem();
+extern void keyboard_setup();
+extern void print_text(const char *str); // Make sure this is declared
 // VGA_WIDTH 80
 // VGA_HEIGHT 20
 
@@ -122,5 +124,7 @@ void kernel_main()
   malloc(5000); // Here we pass in the DATA_POOL_ADDRESS we will keep in count and add offset with, then secound argument is how many bytes the user wants.
 
   // Enable our interrupts
+  keyboard_setup();
+
   enable_interrupts();
 }
